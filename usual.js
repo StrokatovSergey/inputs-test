@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const configurationPhone = {
-    caretPosition: 1,
+    caretPosition: 2,
     pattern : "+*(***) ***-****",
     mask : "+7(###) ###-####"
 }
@@ -304,12 +304,12 @@ const phone     = document.getElementById('phone');
 
 phone.onfocus = () => {
     setTimeout(() => {
-      phone.selectionStart = phone.selectionEnd = 2;
+      phone.selectionStart = phone.selectionEnd = configurationPhone.caretPosition;
     });
   };
 
 
-// phone.setSelectionRange(2, 0)
+
 phone.addEventListener('keyup', () => formatPhone(phone));
 formatPhone(phone)
 
