@@ -1,0 +1,1046 @@
+[
+
+  {
+    "name": "Afghanistan",
+    "code": "AFmix"
+  },
+  {
+    "name": "Åland Islands",
+    "code": "AXmix"
+  },
+  {
+    "name": "Albania",
+    "code": "ALmix"
+  },
+  {
+    "name": "Algeria",
+    "code": "DZmix"
+  },
+  {
+    "name": "American Samoa",
+    "code": "ASmix"
+  },
+  {
+    "name": "AndorrA",
+    "code": "ADmix"
+  },
+  {
+    "name": "Angola",
+    "code": "AOmix"
+  },
+  {
+    "name": "Anguilla",
+    "code": "AImix"
+  },
+  {
+    "name": "Antarctica",
+    "code": "AQmix"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "AGmix"
+  },
+  {
+    "name": "Argentina",
+    "code": "ARmix"
+  },
+  {
+    "name": "Armenia",
+    "code": "AMmix"
+  },
+  {
+    "name": "Aruba",
+    "code": "AWmix"
+  },
+  {
+    "name": "Australia",
+    "code": "AUmix"
+  },
+  {
+    "name": "Austria",
+    "code": "ATmix"
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZmix"
+  },
+  {
+    "name": "Bahamas",
+    "code": "BSmix"
+  },
+  {
+    "name": "Bahrain",
+    "code": "BHmix"
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BDmix"
+  },
+  {
+    "name": "Barbados",
+    "code": "BBmix"
+  },
+  {
+    "name": "Belarus",
+    "code": "BYmix"
+  },
+  {
+    "name": "Belgium",
+    "code": "BEmix"
+  },
+  {
+    "name": "Belize",
+    "code": "BZmix"
+  },
+  {
+    "name": "Benin",
+    "code": "BJmix"
+  },
+  {
+    "name": "Bermuda",
+    "code": "BMmix"
+  },
+  {
+    "name": "Bhutan",
+    "code": "BTmix"
+  },
+  {
+    "name": "Bolivia",
+    "code": "BOmix"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "BAmix"
+  },
+  {
+    "name": "Botswana",
+    "code": "BWmix"
+  },
+  {
+    "name": "Bouvet Island",
+    "code": "BVmix"
+  },
+  {
+    "name": "Brazil",
+    "code": "BRmix"
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "code": "IOmix"
+  },
+  {
+    "name": "Brunei Darussalam",
+    "code": "BNmix"
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BGmix"
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "BFmix"
+  },
+  {
+    "name": "Burundi",
+    "code": "BImix"
+  },
+  {
+    "name": "Cambodia",
+    "code": "KHmix"
+  },
+  {
+    "name": "Cameroon",
+    "code": "CMmix"
+  },
+  {
+    "name": "Canada",
+    "code": "CAmix"
+  },
+  {
+    "name": "Cape Verde",
+    "code": "CVmix"
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "KYmix"
+  },
+  {
+    "name": "Central African Republic",
+    "code": "CFmix"
+  },
+  {
+    "name": "Chad",
+    "code": "TDmix"
+  },
+  {
+    "name": "Chile",
+    "code": "CLmix"
+  },
+  {
+    "name": "China",
+    "code": "CNmix"
+  },
+  {
+    "name": "Christmas Island",
+    "code": "CXmix"
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "code": "CCmix"
+  },
+  {
+    "name": "Colombia",
+    "code": "COmix"
+  },
+  {
+    "name": "Comoros",
+    "code": "KMmix"
+  },
+  {
+    "name": "Congo",
+    "code": "CGmix"
+  },
+  {
+    "name": "Congo, The Democratic Republic of the",
+    "code": "CDmix"
+  },
+  {
+    "name": "Cook Islands",
+    "code": "CKmix"
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CRmix"
+  },
+  {
+    "name": "Cote D'Ivoire",
+    "code": "CImix"
+  },
+  {
+    "name": "Croatia",
+    "code": "HRmix"
+  },
+  {
+    "name": "Cuba",
+    "code": "CUmix"
+  },
+  {
+    "name": "Cyprus",
+    "code": "CYmix"
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZmix"
+  },
+  {
+    "name": "Denmark",
+    "code": "DKmix"
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJmix"
+  },
+  {
+    "name": "Dominica",
+    "code": "DMmix"
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DOmix"
+  },
+  {
+    "name": "Ecuador",
+    "code": "ECmix"
+  },
+  {
+    "name": "Egypt",
+    "code": "EGmix"
+  },
+  {
+    "name": "El Salvador",
+    "code": "SVmix"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "code": "GQmix"
+  },
+  {
+    "name": "Eritrea",
+    "code": "ERmix"
+  },
+  {
+    "name": "Estonia",
+    "code": "EEmix"
+  },
+  {
+    "name": "Ethiopia",
+    "code": "ETmix"
+  },
+  {
+    "name": "Falkland Islands (Malvinas)",
+    "code": "FKmix"
+  },
+  {
+    "name": "Faroe Islands",
+    "code": "FOmix"
+  },
+  {
+    "name": "Fiji",
+    "code": "FJmix"
+  },
+  {
+    "name": "Finland",
+    "code": "FImix"
+  },
+  {
+    "name": "France",
+    "code": "FRmix"
+  },
+  {
+    "name": "French Guiana",
+    "code": "GFmix"
+  },
+  {
+    "name": "French Polynesia",
+    "code": "PFmix"
+  },
+  {
+    "name": "French Southern Territories",
+    "code": "TFmix"
+  },
+  {
+    "name": "Gabon",
+    "code": "GAmix"
+  },
+  {
+    "name": "Gambia",
+    "code": "GMmix"
+  },
+  {
+    "name": "Georgia",
+    "code": "GEmix"
+  },
+  {
+    "name": "Germany",
+    "code": "DEmix"
+  },
+  {
+    "name": "Ghana",
+    "code": "GHmix"
+  },
+  {
+    "name": "Gibraltar",
+    "code": "GImix"
+  },
+  {
+    "name": "Greece",
+    "code": "GRmix"
+  },
+  {
+    "name": "Greenland",
+    "code": "GLmix"
+  },
+  {
+    "name": "Grenada",
+    "code": "GDmix"
+  },
+  {
+    "name": "Guadeloupe",
+    "code": "GPmix"
+  },
+  {
+    "name": "Guam",
+    "code": "GUmix"
+  },
+  {
+    "name": "Guatemala",
+    "code": "GTmix"
+  },
+  {
+    "name": "Guernsey",
+    "code": "GGmix"
+  },
+  {
+    "name": "Guinea",
+    "code": "GNmix"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "GWmix"
+  },
+  {
+    "name": "Guyana",
+    "code": "GYmix"
+  },
+  {
+    "name": "Haiti",
+    "code": "HTmix"
+  },
+  {
+    "name": "Heard Island and Mcdonald Islands",
+    "code": "HMmix"
+  },
+  {
+    "name": "Holy See (Vatican City State)",
+    "code": "VAmix"
+  },
+  {
+    "name": "Honduras",
+    "code": "HNmix"
+  },
+  {
+    "name": "Hong Kong",
+    "code": "HKmix"
+  },
+  {
+    "name": "Hungary",
+    "code": "HUmix"
+  },
+  {
+    "name": "Iceland",
+    "code": "ISmix"
+  },
+  {
+    "name": "India",
+    "code": "INmix"
+  },
+  {
+    "name": "щщщщщщщmix"
+  },
+  {
+    "name": "щщщщщщщmix"
+  },
+  {
+    "name": "щщщщщщщmix"
+  },
+  {
+    "name": "щщщщщщщmix"
+  },
+  {
+    "name": "щщщщщщщmix"
+  },
+  {
+    "name": "щщщщщщщmix"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "щщщщщщщ"
+  },
+  {
+    "name": "Indonesia",
+    "code": "IDmix"
+  },
+  {
+    "name": "Iran, Islamic Republic Of",
+    "code": "IRmix"
+  },
+  {
+    "name": "Iraq",
+    "code": "IQmix"
+  },
+  {
+    "name": "Ireland",
+    "code": "IEmix"
+  },
+  {
+    "name": "Isle of Man",
+    "code": "IMmix"
+  },
+  {
+    "name": "Israel",
+    "code": "ILmix"
+  },
+  {
+    "name": "Italy",
+    "code": "ITmix"
+  },
+  {
+    "name": "Jamaica",
+    "code": "JMmix"
+  },
+  {
+    "name": "Japan",
+    "code": "JPmix"
+  },
+  {
+    "name": "Jersey",
+    "code": "JEmix"
+  },
+  {
+    "name": "Jordan",
+    "code": "JOmix"
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KZmix"
+  },
+  {
+    "name": "Kenya",
+    "code": "KEmix"
+  },
+  {
+    "name": "Kiribati",
+    "code": "KImix"
+  },
+  {
+    "name": "Korea, Democratic People'S Republic of",
+    "code": "KPmix"
+  },
+  {
+    "name": "Korea, Republic of",
+    "code": "KRmix"
+  },
+  {
+    "name": "Kuwait",
+    "code": "KWmix"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "KGmix"
+  },
+  {
+    "name": "Lao People'S Democratic Republic",
+    "code": "LAmix"
+  },
+  {
+    "name": "Latvia",
+    "code": "LVmix"
+  },
+  {
+    "name": "Lebanon",
+    "code": "LBmix"
+  },
+  {
+    "name": "Lesotho",
+    "code": "LSmix"
+  },
+  {
+    "name": "Liberia",
+    "code": "LRmix"
+  },
+  {
+    "name": "Libyan Arab Jamahiriya",
+    "code": "LYmix"
+  },
+  {
+    "name": "Liechtenstein",
+    "code": "LImix"
+  },
+  {
+    "name": "Lithuania",
+    "code": "LTmix"
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LUmix"
+  },
+  {
+    "name": "Macao",
+    "code": "MOmix"
+  },
+  {
+    "name": "Macedonia, The Former Yugoslav Republic of",
+    "code": "MKmix"
+  },
+  {
+    "name": "Madagascar",
+    "code": "MGmix"
+  },
+  {
+    "name": "Malawi",
+    "code": "MWmix"
+  },
+  {
+    "name": "Malaysia",
+    "code": "MYmix"
+  },
+  {
+    "name": "Maldives",
+    "code": "MVmix"
+  },
+  {
+    "name": "Mali",
+    "code": "MLmix"
+  },
+  {
+    "name": "Malta",
+    "code": "MTmix"
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "MHmix"
+  },
+  {
+    "name": "Martinique",
+    "code": "MQmix"
+  },
+  {
+    "name": "Mauritania",
+    "code": "MRmix"
+  },
+  {
+    "name": "Mauritius",
+    "code": "MUmix"
+  },
+  {
+    "name": "Mayotte",
+    "code": "YTmix"
+  },
+  {
+    "name": "Mexico",
+    "code": "MXmix"
+  },
+  {
+    "name": "Micronesia, Federated States of",
+    "code": "FMmix"
+  },
+  {
+    "name": "Moldova, Republic of",
+    "code": "MDmix"
+  },
+  {
+    "name": "Monaco",
+    "code": "MCmix"
+  },
+  {
+    "name": "Mongolia",
+    "code": "MNmix"
+  },
+  {
+    "name": "Montserrat",
+    "code": "MSmix"
+  },
+  {
+    "name": "Morocco",
+    "code": "MAmix"
+  },
+  {
+    "name": "Mozambique",
+    "code": "MZmix"
+  },
+  {
+    "name": "Myanmar",
+    "code": "MMmix"
+  },
+  {
+    "name": "Namibia",
+    "code": "NAmix"
+  },
+  {
+    "name": "Nauru",
+    "code": "NRmix"
+  },
+  {
+    "name": "LISTERmix"
+  },
+  {
+    "name": "LOCAL MOTORSmix"
+  },
+  {
+    "name": "LOBINImix"
+  },
+  {
+    "name": "LOTECmix"
+  },
+  {
+    "name": "LOTUS CARSmix"
+  },
+  {
+    "name": "LUCRA CARSmix"
+  },
+  {
+    "name": "LUXGENmix"
+  },
+  {
+    "name": "MAHINDRAmix"
+  },
+  {
+    "name": "MARUSSIAmix"
+  },
+  {
+    "name": "MARUTI SUZUKImix"
+  },
+  {
+    "name": "MASERATImix"
+  },
+  {
+    "name": "MASTRETTAmix"
+  },
+  {
+    "name": "MAZDAmix"
+  },
+  {
+    "name": "MCLARENmix"
+  },
+  {
+    "name": "MERCEDES-BENZmix"
+  },
+  {
+    "name": "MGmix"
+  },
+  {
+    "name": "MICROmix"
+  },
+  {
+    "name": "MINImix"
+  },
+  {
+    "name": "MITSUBISHImix"
+  },
+  {
+    "name": "MITSUOKAmix"
+  },
+  {
+    "name": "MORGANmix"
+  },
+  {
+    "name": "MULLENmix"
+  },
+  {
+    "name": "MYCARmix"
+  },
+  {
+    "name": "MYVI-PERODUAmix"
+  },
+  {
+    "name": "NISSANmix"
+  },
+  {
+    "name": "NOBLEmix"
+  },
+  {
+    "name": "NOTAmix"
+  },
+  {
+    "name": "OLDSMOBILEmix"
+  },
+  {
+    "name": "OPELmix"
+  },
+  {
+    "name": "OPTIMAL ENERGYmix"
+  },
+  {
+    "name": "ORCAmix"
+  },
+  {
+    "name": "OLTCITmix"
+  },
+  {
+    "name": "PAGANImix"
+  },
+  {
+    "name": "PANHARDmix"
+  },
+  {
+    "name": "PANOZmix"
+  },
+  {
+    "name": "PERANAmix"
+  },
+  {
+    "name": "PERODUAmix"
+  },
+  {
+    "name": "PEUGEOTmix"
+  },
+  {
+    "name": "P.G.O.mix"
+  },
+  {
+    "name": "POLARSUNmix"
+  },
+  {
+    "name": "PLYMOUTHmix"
+  },
+  {
+    "name": "PORSCHEmix"
+  },
+  {
+    "name": "PROTOmix"
+  },
+  {
+    "name": "OULLIMmix"
+  },
+  {
+    "name": "PROTONmix"
+  },
+  {
+    "name": "PURITALIAmix"
+  },
+  {
+    "name": "QOROSmix"
+  },
+  {
+    "name": "QVALEmix"
+  },
+  {
+    "name": "RADICALmix"
+  },
+  {
+    "name": "RELIANTmix"
+  },
+  {
+    "name": "RENAULTmix"
+  },
+  {
+    "name": "REVAmix"
+  },
+  {
+    "name": "RIMACmix"
+  },
+  {
+    "name": "RINSPEEDmix"
+  },
+  {
+    "name": "RODINGmix"
+  },
+  {
+    "name": "ROEWEmix"
+  },
+  {
+    "name": "ROLLS-ROYCEmix"
+  },
+  {
+    "name": "ROSSIN-BERTINmix"
+  },
+  {
+    "name": "ROSSIONmix"
+  },
+  {
+    "name": "ROVERmix"
+  },
+  {
+    "name": "SAABmix"
+  },
+  {
+    "name": "SALEENmix"
+  },
+  {
+    "name": "SAIC-GM-WULINGmix"
+  },
+  {
+    "name": "SAIPAmix"
+  },
+  {
+    "name": "SAKERmix"
+  },
+  {
+    "name": "SAMSUNGmix"
+  },
+  {
+    "name": "SANmix"
+  },
+  {
+    "name": "SBARROmix"
+  },
+  {
+    "name": "SCIONmix"
+  },
+  {
+    "name": "SEATmix"
+  },
+  {
+    "name": "SHANGHAI MAPLEmix"
+  },
+  {
+    "name": "SINmix"
+  },
+  {
+    "name": "ŠKODAmix"
+  },
+  {
+    "name": "SMARTmix"
+  },
+  {
+    "name": "SPADA VETTURE SPORTmix"
+  },
+  {
+    "name": "SPYKERmix"
+  },
+  {
+    "name": "SSANGYONGmix"
+  },
+  {
+    "name": "SSC NORTH AMERICAmix"
+  },
+  {
+    "name": "STREET & RACING TECHNOLOGYmix"
+  },
+  {
+    "name": "SUBARUmix"
+  },
+  {
+    "name": "SUZUKImix"
+  },
+  {
+    "name": "TANOMmix"
+  },
+  {
+    "name": "TATAmix"
+  },
+  {
+    "name": "TAUROmix"
+  },
+  {
+    "name": "TAWON CARmix"
+  },
+  {
+    "name": "TD CARSmix"
+  },
+  {
+    "name": "TESLAmix"
+  },
+  {
+    "name": "THAI RUNGmix"
+  },
+  {
+    "name": "TOYOTAmix"
+  },
+  {
+    "name": "TREKKAmix"
+  },
+  {
+    "name": "TRIDENTmix"
+  },
+  {
+    "name": "TRIUMPHmix"
+  },
+  {
+    "name": "TROLLERmix"
+  },
+  {
+    "name": "TRUMPCHImix"
+  },
+  {
+    "name": "TUSHEKmix"
+  },
+  {
+    "name": "TVRmix"
+  },
+  {
+    "name": "TVSmix"
+  },
+  {
+    "name": "ULTIMAmix"
+  },
+  {
+    "name": "UMMmix"
+  },
+  {
+    "name": "UEVmix"
+  },
+  {
+    "name": "URImix"
+  },
+  {
+    "name": "UAZmix"
+  },
+  {
+    "name": "VAUXHALL MOTORSmix"
+  },
+  {
+    "name": "VECTORmix"
+  },
+  {
+    "name": "VENCERmix"
+  },
+  {
+    "name": "VENIRAUTOmix"
+  },
+  {
+    "name": "VENTURImix"
+  },
+  {
+    "name": "VEPRmix"
+  },
+  {
+    "name": "VOLKSWAGENmix"
+  },
+  {
+    "name": "VOLVOmix"
+  },
+  {
+    "name": "VINFASTmix"
+  },
+  {
+    "name": "W MOTORSmix"
+  },
+  {
+    "name": "WALLYSCARmix"
+  },
+  {
+    "name": "WESTFIELDmix"
+  },
+  {
+    "name": "WHEEGOmix"
+  },
+  {
+    "name": "WIESMANNmix"
+  },
+  {
+    "name": "XENIAmix"
+  },
+  {
+    "name": "YES!mix"
+  },
+  {
+    "name": "Nepal",
+    "code": "NPmix"
+  },
+  {
+    "name": "Netherlands",
+    "code": "NLmix"
+  },
+  {
+    "name": "Netherlands Antilles",
+    "code": "ANmix"
+  },
+  {
+    "name": "New Caledonia",
+    "code": "NCmix"
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZmix"
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NImix"
+  },
+  {
+    "name": "Niger",
+    "code": "NEmix"
+  },
+  {
+    "name": "Nigeria",
+    "code": "NGmix"
+  },
+  {
+    "name": "Niue",
+    "code": "NU"
+  }
+]
