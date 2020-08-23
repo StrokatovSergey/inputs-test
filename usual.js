@@ -41,14 +41,14 @@ const setLocalItem = async (postUrl) => {
             localStorage.setItem(`search-${configurations.searchKey}`, JSON.stringify([value]));
         }
     }
-
-    fetch(postUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json;charset=utf-8'
-        },
-        body: JSON.stringify(value)
-      })
+        // комментирую, так как нет места, куда могу отправлять post
+    // fetch(postUrl, {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json;charset=utf-8'
+    //     },
+    //     body: JSON.stringify(value)
+    //   })
 
       let canCreateItemList = true;
 
