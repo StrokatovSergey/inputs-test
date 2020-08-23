@@ -1,6 +1,6 @@
 # inputs-test
 
-запускать  с помощью browser-sync, а именно -  browser-sync start --server '' --files ''
+запускать  с помощью browser-sync, а именно -  browser-sync start --server "" --files ""
 
 или любого другого live server
 
