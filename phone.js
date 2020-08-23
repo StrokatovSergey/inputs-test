@@ -56,7 +56,7 @@ const rightFocus = () => {
 
 }
 document.querySelector('.inputs-test__label--phone').addEventListener('click', rightFocus)
-phone.addEventListener('keyup', () => formatPhone(phone));
+phone.addEventListener('input', () => formatPhone(phone));
 formatPhone(phone)
 
 
