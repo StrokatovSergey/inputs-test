@@ -11,6 +11,8 @@ const doFormatPhone = (x, pattern, mask) => {
     let chars         = strippedValue.split('');
     let count         = 0;
     let formatted     = '';
+    console.log('strippedValue', strippedValue);
+
     for (let i = 0; i < pattern.length; i++) {
         const c = pattern[i];
         if (chars[count]) {
@@ -30,7 +32,7 @@ const doFormatPhone = (x, pattern, mask) => {
 
 
 //установить маску в инпут
-const formatPhone = (elem) => {
+const formatPhone = (elem, value) => {
     let val    = doFormatPhone(elem.value, configurationPhone.pattern);
     elem.value = doFormatPhone(elem.value, configurationPhone.pattern, configurationPhone.mask);
 
@@ -55,9 +57,12 @@ const rightFocus = () => {
     };
 
 }
+
+
 document.querySelector('.inputs-test__label--phone').addEventListener('click', rightFocus)
-phone.addEventListener('input', () => formatPhone(phone));
+phone.addEventListener('input', () => {
+    formatPhone(phone, phone.value)
+});
+
+
 formatPhone(phone)
-
-
-

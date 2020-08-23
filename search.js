@@ -1,5 +1,4 @@
 const configurationSearch = {
-    leaderUrl: '',
     minPLank:  3,
     searchKey: 'name',
     postUrl:   'https://example',
@@ -8,6 +7,7 @@ const configurationSearch = {
 
 const search    = document.getElementById('search');
 const matchList = document.getElementById('match-list-search');
+
 
 
 //записать значение в localStorage и отправить POST
@@ -57,7 +57,6 @@ const setLocalItem = async(postUrl) => {
             break
         }
     }
-
     if (canCreateItemList) {
         list.append(renderDropDownItem(value, true))
     }
@@ -87,6 +86,7 @@ const deleteLocalItemClearForm = () => {
         }
     }
     searchInput.value = '';
+    localStorage.setItem(`search-injected-${configurationSearch.searchKey}`, '')
 }
 
 //найти значение ключа в объекте любой вложенности 
@@ -139,14 +139,15 @@ const searchStatesFirstLetter = async(key, searchText, minPLank, arr) => {
         totalList = await firstSearch(key, searchText, arr);
 
     } else if (searchText.length > 1) {
-        totalList = await getList(key, searchText, configurationSearch.leaderUrl)
+        totalList = await getList(key, searchText, localStorage.getItem(`leader-url--${configurationSearch.searchKey}`))
     }
 
     if (searchText.length === 0 || undefined) {
-        configurationSearch.leaderUrl = '';
+        localStorage.setItem(`leader-url--${configurationSearch.searchKey}`, '')
         totalList                     = [];
         matchList.innerHTML           = '';
     }
+    // console.log(totalList);
     renderDropDownList(totalList.filtered || [], totalList.localFiltered || [])
 }
 
@@ -157,15 +158,14 @@ const firstSearch = async(key, searchText, arr) => {
     for (let i = 0; i < arr.length; i++) {
         total = await getList(key, searchText, arr[i]);
         if (total.filtered.length >= configurationSearch.minPLank) {
-            configurationSearch.leaderUrl = arr[i];
+            localStorage.setItem(`leader-url--${configurationSearch.searchKey}`, arr[i] )
             break
         } else {
-            configurationSearch.leaderUrl = arr[i];
+            localStorage.setItem( `leader-url--${configurationSearch.searchKey}`, arr[i] )
         }
     }
     return total;
 }
-
 //скрыть список, если нет детей / показать, если есть
 const myObserverForChild = () => {
     const list = document.getElementById('match-list-search')
@@ -225,18 +225,32 @@ const renderDropDownList = (matches, localMatches) => {
     }
 }
 
-
+//проверить локальное хранилище
 const checkLocalStorage = () => {
     if (!localStorage.getItem(`search-${configurationSearch.searchKey}`)) {
         localStorage.setItem(`search-${configurationSearch.searchKey}`, '[]')
     }
+    if (!localStorage.getItem(`search-injected-${configurationSearch.searchKey}`)) {
+        localStorage.setItem(`search-injected-${configurationSearch.searchKey}`, '')
+    } else  {
+        search.value = localStorage.getItem(`search-injected-${configurationSearch.searchKey}`)
+        searchStatesFirstLetter(configurationSearch.searchKey, search.value, 3, configurationSearch.urlList)
+    }
 }
 
+//сохранить и вывести в инпут то значение, которое было до последней перезагрузки
+const saveInjectedInput = (injectedValue) => {
+    localStorage.setItem(`search-injected-${configurationSearch.searchKey}`, injectedValue )
+    search.value = injectedValue
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-    search.addEventListener('input', () => searchStatesFirstLetter(configurationSearch.searchKey, search.value, 3, configurationSearch.urlList))
+    search.addEventListener('input', () => {
+        searchStatesFirstLetter(configurationSearch.searchKey, search.value, 3, configurationSearch.urlList)
+        saveInjectedInput(search.value)
+    })
     document.getElementById('input__btn--clear-search').addEventListener('click', deleteLocalItemClearForm)
-    document.querySelector('.input__btn--rec-search').addEventListener('click', () => setLocalItem(configurationSearch.postUrl))
+    document.getElementById('input__btn--rec-search').addEventListener('click', () => setLocalItem(configurationSearch.postUrl))
     activateMyObserverForChild()
     checkLocalStorage()
 });
