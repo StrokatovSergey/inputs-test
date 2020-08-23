@@ -1,16 +1,25 @@
 {
-  "name": "books",
+  "name": "inputs-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "запускать  с помощью browser-sync, а именно -  browser-sync start --server \"\" --files \"\"",
   "main": "script.js",
   "type": "modules",
   "scripts": {
+    "start": "browser-sync start --server \"\" --files \"\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "ts-loader": "^8.0.2",
-    "typescript": "^3.9.7"
-  }
+  "devDependencies": {},
+  "dependencies": {
+    "browser-sync": "^2.26.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StrokatovSergey/inputs-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StrokatovSergey/inputs-test/issues"
+  },
+  "homepage": "https://github.com/StrokatovSergey/inputs-test#readme"
 }

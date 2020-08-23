@@ -1,21 +1,20 @@
 const configurationSearch = {
-    leaderUrl : '',
-    minPLank : 3,
+    leaderUrl: '',
+    minPLank:  3,
     searchKey: 'name',
-    postUrl : 'https://jsonplaceholder.typicode.com',
-    urlList : ['cars.json', 'countries.json', 'mix.json']
+    postUrl:   'https://example',
+    urlList:   ['cars.json', 'countries.json', 'mix.json']
 }
 
 const search    = document.getElementById('search');
 const matchList = document.getElementById('match-list-search');
 
 
-
 //записать значение в localStorage и отправить POST
-const setLocalItem = async (postUrl) => {
+const setLocalItem = async(postUrl) => {
 
-    const input = document.getElementById('search');
-    const list = document.getElementById('match-list-search');
+    const input           = document.getElementById('search');
+    const list            = document.getElementById('match-list-search');
     const autosuggestList = [];
 
     const value = input.value;
@@ -32,7 +31,7 @@ const setLocalItem = async (postUrl) => {
     if (!filteredAutosuggestList.length) {
 
         if (localStorage.getItem(`search-${configurationSearch.searchKey}`)) {
-            const localArr = JSON.parse( localStorage.getItem(`search-${configurationSearch.searchKey}`) );
+            const localArr = JSON.parse(localStorage.getItem(`search-${configurationSearch.searchKey}`));
             if (!localArr.some(item => item === value)) {
                 localArr.push(value);
                 localStorage.setItem(`search-${configurationSearch.searchKey}`, JSON.stringify(localArr));
@@ -41,7 +40,7 @@ const setLocalItem = async (postUrl) => {
             localStorage.setItem(`search-${configurationSearch.searchKey}`, JSON.stringify([value]));
         }
     }
-        // комментирую, так как нет места, куда могу отправлять post
+    // комментирую, так как нет места, куда могу отправлять post
     // fetch(postUrl, {
     //     method: 'POST',
     //     headers: {
@@ -50,18 +49,18 @@ const setLocalItem = async (postUrl) => {
     //     body: JSON.stringify(value)
     //   })
 
-      let canCreateItemList = true;
+    let canCreateItemList = true;
 
-      for (let i = 0; i < list.children.length; i++) {
-          if (list.children[i].textContent === value) {
+    for (let i = 0; i < list.children.length; i++) {
+        if (list.children[i].textContent === value) {
             canCreateItemList = false
             break
-          }
-      }
+        }
+    }
 
-      if (canCreateItemList) {
+    if (canCreateItemList) {
         list.append(renderDropDownItem(value, true))
-      }
+    }
 }
 
 
@@ -72,7 +71,7 @@ const deleteLocalItemClearForm = () => {
         return true
     }
     if (localStorage.getItem(`search-${configurationSearch.searchKey}`)) {
-        const localMatches = JSON.parse( localStorage.getItem(`search-${configurationSearch.searchKey}`) );
+        const localMatches               = JSON.parse(localStorage.getItem(`search-${configurationSearch.searchKey}`));
         const indexStoragePossibleAnswer = localMatches.indexOf(searchInput.value)
 
         const list = document.getElementById('match-list-search');
@@ -84,8 +83,8 @@ const deleteLocalItemClearForm = () => {
         }
         if (indexStoragePossibleAnswer !== -1) {
             localMatches.splice(indexStoragePossibleAnswer, 1)
-            localStorage.setItem(`search-${configurationSearch.searchKey}`, JSON.stringify( localMatches ))
-        } 
+            localStorage.setItem(`search-${configurationSearch.searchKey}`, JSON.stringify(localMatches))
+        }
     }
     searchInput.value = '';
 }
@@ -108,14 +107,14 @@ const findValue = (object, key) => {
 
 //получить список совпадений
 const getList = async(key, searchText, url) => {
-    let totalData = {
-        filtered : [],
+    let totalData  = {
+        filtered:      [],
         localFiltered: []
     }
     const states   = await fetch(url).then(data => data.json());
     const filtered = states.map(item => findValue(item, key))
 
-     totalData.filtered = filtered.filter(item => {
+    totalData.filtered = filtered.filter(item => {
         const regex = new RegExp(`^${searchText}`, 'gi');
         return item.match(regex)
     })
@@ -134,19 +133,19 @@ const getList = async(key, searchText, url) => {
 
 
 //искать совпадения по первой введенной букве
-const searchStatesFirstLetter = async(key, searchText, minPLank,  arr) => {
+const searchStatesFirstLetter = async(key, searchText, minPLank, arr) => {
     let totalList = [];
     if (searchText.length === 1) {
-        totalList = await firstSearch(key, searchText,  arr);
+        totalList = await firstSearch(key, searchText, arr);
 
     } else if (searchText.length > 1) {
         totalList = await getList(key, searchText, configurationSearch.leaderUrl)
     }
 
     if (searchText.length === 0 || undefined) {
-        configurationSearch.leaderUrl           = '';
-        totalList           = [];
-        matchList.innerHTML = '';
+        configurationSearch.leaderUrl = '';
+        totalList                     = [];
+        matchList.innerHTML           = '';
     }
     renderDropDownList(totalList.filtered || [], totalList.localFiltered || [])
 }
@@ -170,11 +169,11 @@ const firstSearch = async(key, searchText, arr) => {
 //скрыть список, если нет детей / показать, если есть
 const myObserverForChild = () => {
     const list = document.getElementById('match-list-search')
-        if (list.children.length === 0) {
-            list.classList.add('disabled')
-        } else {
-            list.classList.remove('disabled')
-        }    
+    if (list.children.length === 0) {
+        list.classList.add('disabled')
+    } else {
+        list.classList.remove('disabled')
+    }
 }
 
 //активировать слежку на обновлениями изменения количества детей у списка
@@ -189,7 +188,7 @@ const activateMyObserverForChild = () => {
 
 //клик по элементу списка совпадений
 const DropDownItemSetInput = (word) => {
-    search.value = word
+    search.value   = word
     const list     = document.getElementById('match-list-search');
     list.innerHTML = ''
 }
@@ -199,9 +198,9 @@ const renderDropDownItem = (item, isLocal) => {
     const itemList       = document.createElement('DIV');
     itemList.textContent = item;
     if (isLocal) {
-        itemList.className   = 'inputs-test__match-item inputs-test__match-item--local';
+        itemList.className = 'inputs-test__match-item inputs-test__match-item--local';
     } else {
-        itemList.className   = 'inputs-test__match-item';
+        itemList.className = 'inputs-test__match-item';
     }
 
     itemList.addEventListener('click', () => DropDownItemSetInput(item))
@@ -212,7 +211,7 @@ const renderDropDownItem = (item, isLocal) => {
 const renderDropDownList = (matches, localMatches) => {
     const list     = document.getElementById('match-list-search');
     list.innerHTML = "";
-    list.ulLocal = "";
+    list.ulLocal   = "";
     if (matches.length > 0 || undefined) {
         matches.forEach(item => {
             list.append(renderDropDownItem(item, false))
@@ -227,7 +226,6 @@ const renderDropDownList = (matches, localMatches) => {
 }
 
 
-
 const checkLocalStorage = () => {
     if (!localStorage.getItem(`search-${configurationSearch.searchKey}`)) {
         localStorage.setItem(`search-${configurationSearch.searchKey}`, '[]')
@@ -235,10 +233,8 @@ const checkLocalStorage = () => {
 }
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    search.addEventListener('input', () => searchStatesFirstLetter(configurationSearch.searchKey, search.value, 3 , configurationSearch.urlList))
+    search.addEventListener('input', () => searchStatesFirstLetter(configurationSearch.searchKey, search.value, 3, configurationSearch.urlList))
     document.getElementById('input__btn--clear-search').addEventListener('click', deleteLocalItemClearForm)
     document.querySelector('.input__btn--rec-search').addEventListener('click', () => setLocalItem(configurationSearch.postUrl))
     activateMyObserverForChild()

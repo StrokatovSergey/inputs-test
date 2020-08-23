@@ -1,8 +1,7 @@
 # inputs-test
 
-запускать  с помощью browser-sync, а именно -  browser-sync start --server "" --files ""
-
-или любого другого live server
+разворот npm i 
+старт npm run start
 
 
 требования к задаче
